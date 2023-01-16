@@ -1,0 +1,312 @@
+.Main{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    gap: 7%;
+}
+
+.header{
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    flex-grow: 1;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: orange;
+}
+.mainCard{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 70vh;
+    flex-grow: 3;
+    background-color: blueviolet;
+    box-shadow: rgba(0.75, 0.75, 0.75, 0.95) 0px 15px 25px;
+}
+
+.footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    flex-grow: 1;
+    background-color: white;
+}
+
+.footerContent{
+    display: flex;
+    width:100%;
+    height: 100%;
+    background-color:black ;
+    color: orange;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.question-section{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+.answer-section{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    
+    background-color: whitesmoke;
+}
+.question-number{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 30%;
+    flex-grow: 3;
+    font-size: 35px;
+    font-weight: 900;
+    background-color: blueviolet;
+}
+.question-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    flex-grow: 7;
+    background-color: lightskyblue;
+}
+.text{
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    color: black;
+    text-align: center;
+}
+
+.score-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    color: orange;
+}
+/* .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: ;
+} */
+.answers{
+    width: 80%;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+}
+.answerButton{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    font-size: 19px;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    color: orange;
+    font-family: 'Rowdies';
+}
+
+
+.answerButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.answerButton:active {
+    color: #000
+}
+
+.answerButton:active:after {
+    background: transparent;
+}
+
+.answerButton:hover:before {
+    opacity: 1;
+}
+
+.answerButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media (max-width:400px){
+    .answerButton{
+        width: 80%;
+        background-color: green;
+        overflow-wrap: hidden;
+    }
+}
+
+@media (max-height:300px){
+    .answerButton{
+        width: 80%;
+        background-color: red;
+        overflow-wrap: hidden;
+    }
+}
+@media (max-height:200px){
+    .answerButton{
+        width: 80%;
+        background-color: yellow;
+        overflow-wrap: hidden;
+    }
+}
+@media (max-height:100px){
+    .answerButton{
+        width: 80%;
+        background-color: orange;
+        font-size: 8px;
+        height: 20px;
+    }
+}
+
+@media (max-width:400px){
+    .question-number{
+        font-size: 14px;
+        font-weight: 900;
+        overflow-wrap: hidden;
+    }
+    .text{
+        font-size: 14px;
+        font-weight: 900;
+        overflow-wrap: hidden;
+    }
+    .answerButton{
+        width: 80%;
+        background-color: orange;
+        font-size: 10px;
+        height: 20px;
+    }
+    .header{
+        font-size: 20px;
+        background-color: green;
+    }
+    .footer{
+        font-size: 8px;
+    }
+}
+
+@media (max-width:600px){
+    .question-number{
+        font-size: 14px;
+        font-weight: 900;
+        overflow-wrap: hidden;
+    }
+    .text{
+        font-size: 14px;
+        font-weight: 900;
+        overflow-wrap: hidden;
+    }
+    .answerButton{
+        width: 80%;
+        background-color: orange;
+        font-size: 10px;
+        height: 20px;
+    }
+    .header{
+        font-size: 20px;
+        background-color: red;
+    }
+    .footer{
+        font-size: 8px;
+    }
+}
+
+@media (max-width:800px){
+    .question-number{
+        font-size: 25px;
+        font-weight: 900;
+        overflow-wrap: hidden;
+    }
+    .text{
+        font-size: 20px;
+        font-weight: 900;
+        overflow-wrap: hidden;
+    }
+    .answerButton{
+        width: 80%;
+        background-color: orange;
+        font-size: 15px;
+        height: 30px;
+    }
+    .header{
+        font-size: 30px;
+        background-color: yellow;
+    }
+    .footer{
+        font-size: 8px;
+    }
+}
