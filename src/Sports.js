@@ -123,7 +123,7 @@ function Sports() {
   return (
     <div className="Main">
       <div className="header">
-      <marquee behavior="alternate">QUIZZIT : ANIMALS</marquee>
+      <marquee behavior="alternate">QUIZZIT : SPORTS</marquee>
       </div>
 
       <div className="mainCard">
