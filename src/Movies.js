@@ -121,6 +121,11 @@ function Movies() {
 		}
 	};
 
+	function myFunction() {
+		var popupline = document.getElementById("myPopup");
+		popupline.classList.toggle("show");
+	  }
+
   return (
     <div className="Main">
       <div className="header">
@@ -131,7 +136,35 @@ function Movies() {
 
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					<div class="scoreText">You scored {score} out of {questions.length}</div>
+					
+					<div className="showAnswerButton">
+						<div class="popup">
+							<p class="popuptext" id="myPopup">
+								
+								<div class="one">
+									1.&nbsp;Batman<br/><br/>
+									2.&nbsp;Facebook<br/><br/>
+									3.&nbsp;Avengers<br/><br/>
+									4.&nbsp;Leonardo DiCaprio<br/><br/>
+									
+								</div>
+								<div class="two">
+									5.&nbsp;The Black Pearl<br/><br/>
+									6.&nbsp;Kaalakeyas<br/><br/>
+									7.&nbsp;BabuRao<br/><br/>
+									8.&nbsp;AnybodyCanDance<br/><br/>
+								</div>
+								<div class="three">
+									9.&nbsp;Race<br/><br/>
+									10.&nbsp;SS Rajamouli<br/><br/>
+								</div>
+							</p>
+						</div>
+						<button class="showAnswer" id="showAnswerText" onClick={myFunction}>Show Answers</button>
+						<button class="showHome"><a href="/">Home</a></button> 
+						
+					</div>
 				</div>
 			) :
 				(<>

@@ -120,6 +120,11 @@ function Food() {
 		}
 	};
 
+	function myFunction() {
+		var popupline = document.getElementById("myPopup");
+		popupline.classList.toggle("show");
+	  }
+
   return (
     <div className="Main">
       <div className="header">
@@ -130,7 +135,35 @@ function Food() {
 
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					<div class="scoreText">You scored {score} out of {questions.length}</div>
+					
+					<div className="showAnswerButton">
+						<div class="popup">
+							<p class="popuptext" id="myPopup">
+								
+								<div class="one">
+									1.&nbsp;Hyderabad<br/><br/>
+									2.&nbsp;Wular Lake<br/><br/>
+									3.&nbsp;Konark<br/><br/>
+									4.&nbsp;Alaknanda<br/><br/>
+									
+								</div>
+								<div class="two">
+									5.&nbsp;Amritsar<br/><br/>
+									6.&nbsp;Bengaluru<br/><br/>
+									7.&nbsp;Gol Gumbaz<br/><br/>
+									8.&nbsp;Kerala<br/><br/>
+								</div>
+								<div class="three">
+									9.&nbsp;Uttar Pradesh<br/><br/>
+									10.&nbsp;Gujarat<br/><br/>
+								</div>
+							</p>
+						</div>
+						<button class="showAnswer" id="showAnswerText" onClick={myFunction}>Show Answers</button>
+						<button class="showHome"><a href="/">Home</a></button> 
+						
+					</div>
 				</div>
 			) :
 				(<>

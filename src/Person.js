@@ -121,6 +121,11 @@ function Person() {
 		}
 	};
 
+	function myFunction() {
+		var popupline = document.getElementById("myPopup");
+		popupline.classList.toggle("show");
+	  }
+
   return (
     <div className="Main">
       <div className="header">
@@ -131,7 +136,35 @@ function Person() {
 
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					<div class="scoreText">You scored {score} out of {questions.length}</div>
+					
+					<div className="showAnswerButton">
+						<div class="popup">
+							<p class="popuptext" id="myPopup">
+								
+								<div class="one">
+									1.&nbsp;Sardar Patel<br/><br/>
+									2.&nbsp;Shakunthala Devi<br/><br/>
+									3.&nbsp;Cartoonist<br/><br/>
+									4.&nbsp;Milkha singh<br/><br/>
+									
+								</div>
+								<div class="two">
+									5.&nbsp;Nek Chand<br/><br/>
+									6.&nbsp;Sports<br/><br/>
+									7.&nbsp;Dr. APJ Kalam<br/><br/>
+									8.&nbsp;Rahul Dravid<br/><br/>
+								</div>
+								<div class="three">
+									9.&nbsp;Dr Verghese Kurien<br/><br/>
+									10.&nbsp;Dr.S. Radhakrishnan<br/><br/>
+								</div>
+							</p>
+						</div>
+						<button class="showAnswer" id="showAnswerText" onClick={myFunction}>Show Answers</button>
+						<button class="showHome"><a href="/">Home</a></button> 
+						
+					</div>
 				</div>
 			) :
 				(<>

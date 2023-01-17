@@ -122,6 +122,11 @@ function Sports() {
 		}
 	};
 
+	function myFunction() {
+		var popupline = document.getElementById("myPopup");
+		popupline.classList.toggle("show");
+	  }
+
 	
 
   return (
@@ -135,21 +140,47 @@ function Sports() {
       <div className="mainCard">	
 
 			
-
+			
 			{showScore ? (
 				<div className='score-section'>
+					
 					<div class="scoreText">You scored {score} out of {questions.length}</div>
 					
 					<div className="showAnswerButton">
-						<button class="showAnswer" id="showAnswerText">Show Answers</button>
-						<button class="showAnswer"><a href="/">Home</a></button>
+						<div class="popup">
+							<p class="popuptext" id="myPopup">
+								
+								<div class="one">
+									1.&nbsp;Mumbai<br/><br/>
+									2.&nbsp;Argentina<br/><br/>
+									3.&nbsp;Tennis<br/><br/>
+									4.&nbsp;Hockey<br/><br/>
+									
+								</div>
+								<div class="two">
+									5.&nbsp;Neeraj Chopra<br/><br/>
+									6.&nbsp;F1 Racing<br/><br/>
+									7.&nbsp;Badminton<br/><br/>
+									8.&nbsp;Virat Kohli<br/><br/>
+								</div>
+								<div class="three">
+									9.&nbsp;Football<br/><br/>
+									10.&nbsp;5<br/><br/>
+								</div>
+							</p>
+						</div>
+						<button class="showAnswer" id="showAnswerText" onClick={myFunction}>Show Answers</button>
+						<button class="showHome"><a href="/">Home</a></button> 
 						
 					</div>
+					
 					
 				</div>
 			) :
 				(<>
+				
 					<div className="question-section">
+						
 					<div className="question-number">
 					<span>Question {currentQuestion + 1}</span>/{questions.length}
 					</div>
@@ -170,10 +201,17 @@ function Sports() {
 				</>)
 				
 			}
+
+			
 			
 
       </div> 
+			
+	  {/* <div class="popup" onclick="myFunction()">Click me!
+  			<span class="popuptext" id="myPopup">Popup text...</span>
+	  </div> */}
 	  
+	  	
 
       <div className="footer">
         <div className="footerContent">

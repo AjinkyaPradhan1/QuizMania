@@ -120,6 +120,11 @@ function Animals() {
 		}
 	};
 
+	function myFunction() {
+		var popupline = document.getElementById("myPopup");
+		popupline.classList.toggle("show");
+	  }
+
 
   return (
     <div className="Main">
@@ -131,7 +136,35 @@ function Animals() {
 
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					<div class="scoreText">You scored {score} out of {questions.length}</div>
+					
+					<div className="showAnswerButton">
+						<div class="popup">
+							<p class="popuptext" id="myPopup">
+								
+								<div class="one">
+									1.&nbsp;8<br/><br/>
+									2.&nbsp;Pride<br/><br/>
+									3.&nbsp;Cheetah<br/><br/>
+									4.&nbsp;Elephant<br/><br/>
+									
+								</div>
+								<div class="two">
+									5.&nbsp;Ostrich<br/><br/>
+									6.&nbsp;Whale<br/><br/>
+									7.&nbsp;Dove<br/><br/>
+									8.&nbsp;Ant<br/><br/>
+								</div>
+								<div class="three">
+									9.&nbsp;Hippo<br/><br/>
+									10.&nbsp;Bats<br/><br/>
+								</div>
+							</p>
+						</div>
+						<button class="showAnswer" id="showAnswerText" onClick={myFunction}>Show Answers</button>
+						<button class="showHome"><a href="/">Home</a></button> 
+						
+					</div>
 				</div>
 			) :
 				(<>

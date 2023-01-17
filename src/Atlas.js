@@ -121,6 +121,11 @@ function Atlas() {
 		}
 	};
 
+	function myFunction() {
+		var popupline = document.getElementById("myPopup");
+		popupline.classList.toggle("show");
+	  }
+
   return (
     <div className="Main">
       <div className="header">
@@ -131,7 +136,36 @@ function Atlas() {
 
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+
+					<div class="scoreText">You scored {score} out of {questions.length}</div>
+					
+					<div className="showAnswerButton">
+						<div class="popup">
+							<p class="popuptext" id="myPopup">
+								
+							<div class="one">
+									1.&nbsp;Imphal<br/><br/>
+									2.&nbsp;Taka<br/><br/>
+									3.&nbsp;Vatican City<br/><br/>
+									4.&nbsp;Brasilia<br/><br/>
+									
+								</div>
+								<div class="two">
+									5.&nbsp;Myanmar<br/><br/>
+									6.&nbsp;Netherlands<br/><br/>
+									7.&nbsp;Madagascar<br/><br/>
+									8.&nbsp;Yen<br/><br/>
+								</div>
+								<div class="three">
+									9.&nbsp;Germany<br/><br/>
+									10.&nbsp;India<br/><br/>
+								</div>
+							</p>
+						</div>
+						<button class="showAnswer" id="showAnswerText" onClick={myFunction}>Show Answers</button>
+						<button class="showHome"><a href="/">Home</a></button> 
+						
+					</div>
 				</div>
 			) :
 				(<>
