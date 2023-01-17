@@ -7,7 +7,7 @@ function Atlas() {
 
   const questions = [
 		{
-			questionText: 'What is the capital of Manipur',
+			questionText: 'What is the capital of Manipur?',
 			answerOptions: [
 				{ answerText: 'Imphal', isCorrect: true },
 				{ answerText: 'Itanagar', isCorrect: false },
@@ -47,7 +47,7 @@ function Atlas() {
 		},
 
 		{
-			questionText: 'Which of the following is not the lanlocked country?',
+			questionText: 'Which of the following is not a landlocked country?',
 			answerOptions: [
 				{ answerText: 'Afghanistan', isCorrect: false },
 				{ answerText: 'Bhutan', isCorrect: false },
@@ -124,7 +124,7 @@ function Atlas() {
   return (
     <div className="Main">
       <div className="header">
-		<marquee behavior="alternate">QUIZZIT : ATLAS</marquee>
+	  <div className="headerText">QUIZZIT : ATLAS</div>
 	  </div>
 
       <div className="mainCard">

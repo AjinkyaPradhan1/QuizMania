@@ -16,7 +16,7 @@ function Animals() {
 		},
 
     	{
-			questionText: 'What is a group of lions called?',
+			questionText: 'What is the group of lions called?',
 			answerOptions: [
 				{ answerText: 'Pride', isCorrect: true },
 				{ answerText: 'Herd', isCorrect: false },
@@ -31,7 +31,7 @@ function Animals() {
 				{ answerText: 'Deer', isCorrect: false },
 				{ answerText: 'Lion', isCorrect: false },
 				{ answerText: 'Cheetah', isCorrect: true },
-				{ answerText: 'tiger', isCorrect: false },
+				{ answerText: 'Tiger', isCorrect: false },
 			],
 		},
 
@@ -89,7 +89,7 @@ function Animals() {
 				{ answerText: 'Hippo', isCorrect: true },
 				{ answerText: 'Elephant', isCorrect: false },
 				{ answerText: 'Tiger', isCorrect: false },
-				{ answerText: 'Tiger', isCorrect: false },
+				{ answerText: 'Lion', isCorrect: false },
 			],
 		},
 		{
@@ -124,7 +124,7 @@ function Animals() {
   return (
     <div className="Main">
       <div className="header">
-		<marquee behavior="alternate">QUIZZIT : ANIMALS</marquee>
+	  <div className="headerText">QUIZZIT : ANIMALS</div>
 	  </div>
 
       <div className="mainCard">

@@ -6,7 +6,7 @@ function Food() {
 
   const questions = [
 		{
-			questionText: 'Where is the Famous Ramoji Film City is situated?',
+			questionText: 'Where is the Famous Ramoji Film City situated?',
 			answerOptions: [
 				{ answerText: 'Chennai', isCorrect: false },
 				{ answerText: 'Kochi', isCorrect: false },
@@ -36,7 +36,7 @@ function Food() {
 		},
 
 		{
-			questionText: 'Badrinath is situated on the bank of river?',
+			questionText: 'Badrinath is situated on the bank of which river?',
 			answerOptions: [
 				{ answerText: 'Ganga', isCorrect: false },
 				{ answerText: 'Yamuna', isCorrect: false },
@@ -75,7 +75,7 @@ function Food() {
 			],
 		},
 		{
-			questionText: 'Which state is known as Spice Garden of India?',
+			questionText: 'Which state is known as the Spice Garden of India?',
 			answerOptions: [
 				{ answerText: 'Kerala', isCorrect: true },
 				{ answerText: 'Assam', isCorrect: false },
@@ -93,7 +93,7 @@ function Food() {
 			],
 		},
 		{
-			questionText: 'Which Indian State has most airports?',
+			questionText: 'Which Indian State has the most number of airports?',
 			answerOptions: [
 				{ answerText: 'Rajasthan', isCorrect: false },
 				{ answerText: 'Gujarat', isCorrect: true },
@@ -123,7 +123,7 @@ function Food() {
   return (
     <div className="Main">
       <div className="header">
-		<marquee behavior="alternate">QUIZZIT : TOURISM</marquee>
+	  <div className="headerText">QUIZZIT : TOURISM</div>
 	  </div>
 
       <div className="mainCard">

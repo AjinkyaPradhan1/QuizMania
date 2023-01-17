@@ -29,6 +29,7 @@ root.render(
         <Route path="/animals" element={ <Animals /> } />
         <Route path="/food" element={ <Food /> } />
         <Route path="/sports" element={ <Sports /> } />
+        <Route path="/sportsAnswer" element={ <sportsAnswer /> } />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

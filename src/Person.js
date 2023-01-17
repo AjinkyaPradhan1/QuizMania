@@ -7,7 +7,7 @@ function Person() {
 
   const questions = [
 		{
-			questionText: 'Who was known as Iron man of India?',
+			questionText: 'Who was known as the Iron man of India?',
 			answerOptions: [
 				{ answerText: 'Govind Ballabh Pant', isCorrect: false },
 				{ answerText: 'Jawaharlal Nehru', isCorrect: false },
@@ -47,7 +47,7 @@ function Person() {
 		},
 
 		{
-			questionText: 'Who is the creator of the Rock Garden in Chandigarh??',
+			questionText: 'Who is the creator of the Rock Garden in Chandigarh?',
 			answerOptions: [
 				{ answerText: 'Pupal Jayakar', isCorrect: false },
 				{ answerText: 'Le Corbousier', isCorrect: false },
@@ -85,7 +85,7 @@ function Person() {
 			],
 		},
 		{
-			questionText: 'Who started first White Revolution in India?',
+			questionText: 'Who started the first White Revolution in India?',
 			answerOptions: [
 				{ answerText: 'Dr Verghese Kurien', isCorrect: true },
 				{ answerText: 'Dr. MS Swaminathan', isCorrect: false },
@@ -97,7 +97,7 @@ function Person() {
 			questionText: 'Who was 2nd president of India?',
 			answerOptions: [
 				{ answerText: 'Dr. Rajendra Prasad', isCorrect: false },
-				{ answerText: 'Dr. Sarvepalli Radhakrishnan', isCorrect: true },
+				{ answerText: 'Dr. S.Radhakrishnan', isCorrect: true },
 				{ answerText: 'Sardar Vallabhbhai Ptel', isCorrect: false },
 				{ answerText: 'William Bentick', isCorrect: false },
 			],
@@ -124,7 +124,7 @@ function Person() {
   return (
     <div className="Main">
       <div className="header">
-		<marquee behavior="alternate">QUIZZIT : PERSONALITIES</marquee>
+	  <div className="headerText">QUIZZIT : PERSONALITIES</div>
 	  </div>
 
       <div className="mainCard">

@@ -2,6 +2,8 @@ import './App.css';
 import './quizPages.css';
 import React, { useState } from 'react';
 
+
+
 function Sports() {
 
   const questions = [
@@ -56,7 +58,7 @@ function Sports() {
 		},
 
 		{
-			questionText: 'Lewis Hamilton is assosciated which sport ?',
+			questionText: 'Lewis Hamilton is assosciated with which sport ?',
 			answerOptions: [
 				{ answerText: 'Equestrian', isCorrect: false },
 				{ answerText: 'F1 Racing', isCorrect: true },
@@ -66,7 +68,7 @@ function Sports() {
 		},
 
 		{
-			questionText: 'Thomas Cup and Uber Cup are prestiogious trophies of which sport?',
+			questionText: 'Thomas Cup and Uber Cup are prestigious trophies of which sport?',
 			answerOptions: [
 				{ answerText: 'Badminton', isCorrect: true },
 				{ answerText: 'Tennis', isCorrect: false },
@@ -120,17 +122,30 @@ function Sports() {
 		}
 	};
 
+	
+
   return (
     <div className="Main">
       <div className="header">
-      <marquee behavior="alternate">QUIZZIT : SPORTS</marquee>
+		<div className="headerText">QUIZZIT : SPORTS</div>
+		
       </div>
 
-      <div className="mainCard">
+		
+      <div className="mainCard">	
+
+			
 
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					<div class="scoreText">You scored {score} out of {questions.length}</div>
+					
+					<div className="showAnswerButton">
+						<button class="showAnswer" id="showAnswerText">Show Answers</button>
+						<button class="showAnswer"><a href="/">Home</a></button>
+						
+					</div>
+					
 				</div>
 			) :
 				(<>
@@ -153,16 +168,20 @@ function Sports() {
 						</div>
 					</div>
 				</>)
+				
 			}
+			
 
       </div> 
+	  
 
       <div className="footer">
         <div className="footerContent">
-          All Rights Reserved &copy;2023-&infin; Ajinkya Pradhan
+          All Rights Reserved &copy;2023 - &infin; Ajinkya Pradhan
         </div>  
       </div>
 
+	  
 
     </div>
   );

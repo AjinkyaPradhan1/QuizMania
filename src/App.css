@@ -575,3 +575,16 @@ a:hover {
     font-size: small;
   }
 }
+
+@keyframes moveHeader {
+  0%   {color:orange}
+  25%  {color:orangered}
+  50%  {color:darkred}
+  75%  {color:orangered}
+  100% {color:orange}
+}
+.headerText{
+  color: orange;
+  animation-name: moveHeader;
+  animation-duration: 5s;
+}

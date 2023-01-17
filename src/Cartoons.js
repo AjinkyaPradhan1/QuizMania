@@ -123,7 +123,7 @@ function Cartoons() {
   return (
     <div className="Main">
       <div className="header">
-		<marquee behavior="alternate">QUIZZIT : CARTOONS</marquee>
+	  <div className="headerText">QUIZZIT : CARTOONS</div>
 	  </div>
 
       <div className="mainCard">

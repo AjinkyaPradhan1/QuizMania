@@ -47,19 +47,19 @@ function Movies() {
 		},
 
 		{
-			questionText: 'In one of the most hilarious scenes, Virus (Boman Irani) asks a hungover Raju a question in the class. What was it?',
+			questionText: 'What is the name of ship of Jack Sparrow?',
 			answerOptions: [
-				{ answerText: 'How an aeroplane starts?', isCorrect: false },
-				{ answerText: 'How Maruti Car start?', isCorrect: false },
-				{ answerText: 'How engine starts?', isCorrect: false },
-				{ answerText: 'How induction motor starts?', isCorrect: true },
+				{ answerText: 'The Barbosa', isCorrect: false },
+				{ answerText: 'The Black Pearl', isCorrect: true },
+				{ answerText: 'The Blue Whale', isCorrect: false },
+				{ answerText: 'The Tortuga ', isCorrect: false },
 			],
 		},
 
 		{
-			questionText: 'In the climax of the first part of Bahubali, what is the name of the clan who wage a war against Mahishmati??',
+			questionText: 'In the climax of the first part of Bahubali, what is the name of the clan who wage a war against Mahishmati?',
 			answerOptions: [
-				{ answerText: ' Bhringavedas', isCorrect: false },
+				{ answerText: 'Bhringavedas', isCorrect: false },
 				{ answerText: 'Nashtashooras', isCorrect: false },
 				{ answerText: 'Kaalakeyas', isCorrect: true },
 				{ answerText: 'Dhwamsapoornas', isCorrect: false },
@@ -67,7 +67,7 @@ function Movies() {
 		},
 
 		{
-			questionText: 'In Hera Pheri, what was character of Paresh Rawal called?',
+			questionText: 'In Hera Pheri, what was the character of Paresh Rawal called?',
 			answerOptions: [
 				{ answerText: 'Raju', isCorrect: false },
 				{ answerText: 'BabuRao GanpatRao Apte', isCorrect: true },
@@ -79,13 +79,13 @@ function Movies() {
 			questionText: 'Which Movie is this from: "We dance to express ... not to impress"?',
 			answerOptions: [
 				{ answerText: 'Devdas', isCorrect: false },
-				{ answerText: 'Dishoom', isCorrect: false },
-				{ answerText: 'Dance Dance', isCorrect: false },
+				{ answerText: 'Aaja Nachle', isCorrect: false },
+				{ answerText: 'Student of the Year', isCorrect: false },
 				{ answerText: 'Anybody Can Dance', isCorrect: true },
 			],
 		},
 		{
-			questionText: 'Whic is not a mmovie based on Sports?',
+			questionText: 'Which is not a movie based on Sports?',
 			answerOptions: [
 				{ answerText: 'Lagaan', isCorrect: false },
 				{ answerText: 'Gold', isCorrect: false },
@@ -124,7 +124,7 @@ function Movies() {
   return (
     <div className="Main">
       <div className="header">
-		<marquee behavior="alternate">QUIZZIT : MOVIES</marquee>
+		<div className="headerText">QUIZZIT : MOVIES</div>
 	  </div>
 
       <div className="mainCard">
