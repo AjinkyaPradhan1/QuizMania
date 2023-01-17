@@ -31,16 +31,16 @@ function Contact() {
         <div class="screen-body-item">
           <div class="app-form">
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="NAME" value=""/>
+              <input class="app-form-control" type="text" placeholder="NAME" />
             </div>
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="EMAIL"/>
+              <input class="app-form-control" type="email" placeholder="EMAIL"/>
             </div>
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="CONTACT NO"/>
+              <input class="app-form-control" type="text" placeholder="CONTACT NO"/>
             </div>
             <div class="app-form-group message">
-              <input class="app-form-control" placeholder="MESSAGE"/>
+              <input class="app-form-control" type="text" placeholder="MESSAGE"/>
             </div>
             <div class="app-form-group buttons">
               <button class="app-form-button">CANCEL</button>
