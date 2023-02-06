@@ -145,7 +145,7 @@ function Person() {
 								<div class="one">
 									1.&nbsp;Sardar Patel<br/><br/>
 									2.&nbsp;Shakunthala Devi<br/><br/>
-									3.&nbsp;Cartoonist<br/><br/>
+									3.&nbsp;Cartoonist<br/>
 									4.&nbsp;Milkha singh<br/><br/>
 									
 								</div>
