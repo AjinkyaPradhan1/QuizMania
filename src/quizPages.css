@@ -170,9 +170,9 @@
 }
 .answerButton{
     width: 80%;
-    height: 40px;
+    height: 55px;
     display: flex;
-    font-size: 19px;
+    font-size: 25px;
     justify-content: center;
     align-items: center;
     border-radius:20px;
@@ -512,10 +512,175 @@
     height: 100%;
     /* background-color: red; */
   }
+  @media only screen and (max-width: 1600px) and (min-width: 800px){
+    .header{
+        height: 15%;
+        background-color: black;
+    }
+    .headerText{
+        font-size: 45px;
+    }
+    .footer{
+        height: 10%;
+    }
+    .footerContent{
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .mainCard{
+        display: flex;
+        flex-direction: column;
+        height:60% ;
+        width: 50%;
+    }
+    .question-section{
+        display: flex;
+        background-color: orange;
+        width: 100%;
+    }
+    .question-number{
+        width: 100%;
+        background-color: transparent;
+        font-size: 28px;
+        font-weight: 900;
+        align-items: center;
+        justify-content: center;
+    }
+    .question-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .text{
+        font-size: 25px;
+    }
+    .answer-section{
+        width: 100%;
+    }
+    
+    .answerButton{
+        height: 18%;
+        font-size: 20px;
+        width: 50%;
+    }
+    .showAnswer{
+        height: 30%;
+        width: 40%;
+        
+    }
+    .showHome{
+        height: 30%;
+        width: 30%;
+    }
+    .scoreText{
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0%;
+        background-color: transparent;
+    }
+    .showAnswerButton{
+        display: flex;
+        align-items: center;
+    }
+    /* Popup container */
+.popup {
+    position: relative;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 300px;
+    height: 125px;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: -135px;
+    right: -260px;
+    margin-right: -30px; 
+    margin-top: -65px;
+    font-size: 12px;
+    /* display: flex;
+    gap: 5px; */
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0%;
+    margin-right: 190px; 
+    margin-top: 130px;
+    border-width:5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  .popuptext{
+    display: flex;
+    flex-direction: row;
+  }
+  .showAnswer{
+    width: 40%;
+    height: 60px;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    color: orange;
+    background-color: blueviolet;
+    font-family: 'Rowdies';
+    margin-bottom: 80px;   
+}
+.showHome{
+    width: 35%;
+    height: 50px;
+    margin-bottom: 80px;
+    font-size: 28px;
+    }  
+  }
   @media only screen and (max-width: 800px) and (min-width: 480px)  {
     .header{
         height: 15%;
-        background-color: blueviolet;
+        background-color: black;
     }
     .headerText{
         font-size: 35px;
@@ -567,6 +732,7 @@
     .showAnswer{
         height: 30%;
         width: 40%;
+        
     }
     .showHome{
         height: 30%;
@@ -655,7 +821,7 @@
     width: 40%;
     height: 60px;
     display: flex;
-    font-size: 20px;
+    font-size: 23px;
     justify-content: center;
     align-items: center;
     border-radius:20px;
@@ -679,7 +845,7 @@
   @media only screen and (max-width: 480px) and (min-width: 320px)  {
     .header{
         height: 15%;
-        background-color: blueviolet;
+        background-color: black;
     }
     .headerText{
         font-size: 25px;
@@ -841,7 +1007,7 @@
 @media only screen and (max-width: 320px) and (min-width: 100px){
     .header{
         height: 15%;
-        background-color: blueviolet;
+        background-color: black;
     }
     .headerText{
         font-size: 24px;
