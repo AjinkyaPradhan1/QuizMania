@@ -573,9 +573,9 @@
     .scoreText{
         font-size: 36px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        margin-top: 10%;
+        margin-top: 15%;
     }
     /* Popup container */
 .popup {
