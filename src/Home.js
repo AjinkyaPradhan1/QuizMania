@@ -15,16 +15,7 @@ function Home() {
                   {/* <p class="trademark">All Rights Reserved &copy;2023-&infin; Ajinkya Pradhan</p> */}
                 </div>
                 <div class="container-sub-one-right-right">
-                  <div class="container-sub-one-right-right-one">
-                    <div class="container-sub-one-right-right-one-left">
-                      {/* <a href='/share'>Rules</a> */}
-                      
-                    </div>
-                    <div class="container-sub-one-right-right-one-right">
-                    <a href='/contact'>Contact</a>
-                    </div>
-                  </div>
-                  <div class="container-sub-one-right-right-two"></div>
+                    <a href='/contact'>Contact</a>                 
                 </div>
 
               </div>

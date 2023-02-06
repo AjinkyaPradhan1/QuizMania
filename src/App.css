@@ -653,11 +653,35 @@ a:hover{
     flex-grow: 1;
     font-size: 30px;
   }
-  .container-sub-one-right-right-one{
-    width: 0%;
-    flex-grow: 1;
-    font-size: 30px;
+  .container-sub-one-right-left{
+    width: 70%;
+    flex-grow: 7;
+    font-size: 25px;
+    background-color: transparent;
   }
+  .container-sub-one-right-right{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    width: 30%;
+    flex-grow: 3;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: transparent;
+  }
+  /* .container-sub-one-right-right-one-left{
+    width: 0px;
+  }
+  .container-sub-one-right-right-one-right{
+    width: 100%;
+    font-size: 15px;
+    display:flex ;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .container-sub-one-right-right-two{
+    width:0px;
+  } */
 
   
 }
