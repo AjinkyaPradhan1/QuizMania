@@ -517,19 +517,34 @@
         height: 15%;
         background-color: blueviolet;
     }
+    .headerText{
+        font-size: 27px;
+    }
     .footer{
         height: 10%;
     }
     .footerContent{
-        font-size: 17px;
+        font-size: 14.9px;
+        font-weight: 700;
     }
     .mainCard{
+        display: flex;
+        flex-direction: column;
         height:80% ;
         width: 80%;
     }
+    .question-section{
+        display: flex;
+        background-color: orange;
+        width: 100%;
+    }
     .question-number{
+        width: 100%;
+        background-color: transparent;
         font-size: 22px;
         font-weight: 900;
+        align-items: center;
+        justify-content: center;
     }
     .question-text{
         display: flex;
@@ -539,10 +554,13 @@
     .text{
         font-size: 20px;
     }
+    .answer-section{
+        width: 100%;
+    }
     
     .answerButton{
-        height: 10%;
-        font-size: 16px;
+        height: 15%;
+        font-size: 18px;
     }
     .showAnswer{
         height: 30%;
