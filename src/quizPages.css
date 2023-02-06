@@ -575,8 +575,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 10%;
-        background-color: green;
+        margin-top: 0%;
+        background-color: red;
+    }
+    .showAnswerButton{
+        display: flex;
+        align-items: center;
     }
     /* Popup container */
 .popup {
@@ -602,7 +606,7 @@
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    top: -65px;
+    top: -115px;
     right: -220px;
     margin-right: -30px; 
     margin-top: -65px;
@@ -661,12 +665,12 @@
     color: orange;
     background-color: blueviolet;
     font-family: 'Rowdies';
-    
+    margin-bottom: 40px;   
 }
 .showHome{
     width: 35%;
     height: 50px;
-    
-}
+    margin-bottom: 40px;
+    }
     
   }
