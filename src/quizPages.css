@@ -575,7 +575,8 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        margin-top: 15%;
+        margin-top: 7%;
+        background-color: red;
     }
     /* Popup container */
 .popup {
