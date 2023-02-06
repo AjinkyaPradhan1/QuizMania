@@ -146,14 +146,14 @@ function Movies() {
 									1.&nbsp;Batman<br/><br/>
 									2.&nbsp;Facebook<br/><br/>
 									3.&nbsp;Avengers<br/><br/>
-									4.&nbsp;Leonardo DiCaprio<br/><br/>
+									4.&nbsp;Leo DiCaprio<br/><br/>
 									
 								</div>
 								<div class="two">
 									5.&nbsp;The Black Pearl<br/><br/>
 									6.&nbsp;Kaalakeyas<br/><br/>
 									7.&nbsp;BabuRao<br/><br/>
-									8.&nbsp;AnybodyCanDance<br/><br/>
+									&nbsp;8.&nbsp;AnybodyCanDance<br/><br/>
 								</div>
 								<div class="three">
 									9.&nbsp;Race<br/><br/>
