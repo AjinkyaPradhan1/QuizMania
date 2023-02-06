@@ -833,13 +833,13 @@ a:hover{
   .trademark{
     background-color: blueviolet;
     color: orange;
-    font-weight: 900;
+    font-weight: 700;
     width: 100%;
     margin-bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12.5px;
+    font-size: 18px;
   }
   .container-sub-two{
     display: flex;
