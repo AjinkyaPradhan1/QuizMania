@@ -690,71 +690,99 @@ a:hover{
 }
 
 @media only screen and (max-width: 320px) and (min-width: 100px)  {
-  .container-sub-two-container-1,
-  .container-sub-two-container-2,
-  .container-sub-two-container-3,
-  .container-sub-two-container-4{
-    align-items: center;
-    background-color: yellow;
-    gap: 10%;
-  }
-
-  .container-sub-two-container-1-1,
-  .container-sub-two-container-2-1,
-  .container-sub-two-container-3-1,
-  .container-sub-two-container-4-1{
-    background-color: transparent;
+  .container-sub-two-container{
     display: flex;
     flex-direction: column;
-    
+    width: 98%;
+    height: 96%;
+    gap: 8px;
+    justify-content: space-evenly ;  
+  }
+  .container-sub-two-container-1,.container-sub-two-container-3{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    width:90%;
-    height: 1%;
-    margin-top: 70%;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    gap: 4%;
+    margin-bottom: 4px;
+    background-color: transparent;
+  }
+  .container-sub-two-container-2,.container-sub-two-container-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4px;
+    background-color: transparent;
   }
 
-  .container-sub-two-container-1-2,
-  .container-sub-two-container-2-2,
-  .container-sub-two-container-3-2,
-  .container-sub-two-container-4-2{
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    width:90%;
-    height: 1%;
-    margin-bottom: 70%;
-  }
   .flip-card{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    height: 100%;
   }
 
-  .flip-card-back {
-    display: flex;
+  .flip-card {
+    background-color: transparent;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-    font-size: 4px;
-    font-weight: 800;
-    line-height: 16px;
-    min-height: 40px;
-    outline: 0;
-    padding: 12px 14px;
+    height: 100%;
+    perspective: 1000px;
+    display: flex;
+    justify-content: left;
     
-    text-align: left;
+    text-align: center;
   }
-
-  .button-24{
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 200%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    /* transform: translate(20%,-20%); */
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: blueviolet;
+    color: orange;
+    transform: rotateY(180deg);
+    font-family: 'Rowdies', cursive;
+    font-size: 11px;
+    
+  }
+  
+  .flip-top{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .button-24 {
     background: #FF4742;
     border: 1px solid #FF4742;
     border-radius: 6px;
@@ -764,25 +792,79 @@ a:hover{
     cursor: pointer;
     display: inline-block;
     font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-    font-size: 6px;
+    font-size: 15px;
     font-weight: 800;
     line-height: 16px;
     min-height: 40px;
     outline: 0;
-    padding: 4px 4px;
+    padding: 2px 2px;
     text-align: center;
-    width: 120%;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 60%;
   }
   .trademark{
-    font-size: 10px;
+    background-color: blueviolet;
+    color: orange;
+    font-weight: 900;
+    width: 100%;
+    margin-bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: orange;
-    color: black;
+    font-size: 12.5px;
   }
-  h1{
+  .container-sub-two{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    width: 100%;
+    height:85%;
     
-    margin-top: 20px;
+  }
+  .container-sub-one{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    width: 100%;
+    height:15%;
+    background-color: red;
+  }
+  .container-sub-one-left{
+    width: 25%;
+    flex-grow: 1;
+  }
+  .container-sub-one-right{
+    width: 75%;
+    flex-grow: 3;
+  }
+  .container-sub-one-right-left{
+    width: 50%;
+    flex-grow: 1;
+  }
+  .container-sub-one-right-right-two{
+    width: 50%;
+    flex-grow: 1;
+    font-size: 30px;
+  }
+  .container-sub-one-right-left{
+    width: 70%;
+    flex-grow: 7;
+    font-size: 25px;
+    background-color: transparent;
+  }
+  .container-sub-one-right-right{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    width: 30%;
+    flex-grow: 3;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: transparent;
   }
 }
