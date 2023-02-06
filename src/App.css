@@ -539,6 +539,7 @@ a:hover{
     perspective: 1000px;
     display: flex;
     justify-content: left;
+    
     text-align: center;
   }
   
@@ -577,6 +578,7 @@ a:hover{
     color: orange;
     transform: rotateY(180deg);
     font-family: 'Rowdies', cursive;
+    font-size: 11px;
     
   }
   
@@ -595,12 +597,12 @@ a:hover{
     cursor: pointer;
     display: inline-block;
     font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 800;
     line-height: 16px;
     min-height: 40px;
     outline: 0;
-    padding: 12px 14px;
+    padding: 2px 2px;
     text-align: center;
     text-rendering: geometricprecision;
     text-transform: none;
@@ -608,6 +610,7 @@ a:hover{
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
+    width: 60%;
   }
   .trademark{
     background-color: blueviolet;
@@ -618,7 +621,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
+    font-size: 12.5px;
   }
   .container-sub-two{
     display: flex;
