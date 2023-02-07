@@ -198,7 +198,7 @@
   font-weight: bolder;
   overflow: hidden;
   
-  
+
 }
 
 .container-sub-two-container{
@@ -713,6 +713,43 @@ a:hover{
   animation-name: moveHeader;
   animation-duration: 5s;
 }
+@media only screen and (max-width: 1600px) and (min-width: 1250px) {
+  .container-sub-two-container{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    height: 96%;
+    gap: 8px;
+    justify-content: space-evenly ;
+    background-image: url("../public/images/quiz_back4_2.jpg");
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 1250px) and (min-width: 1078px) {
+  .container-sub-two-container{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    height: 96%;
+    gap: 8px;
+    justify-content: space-evenly ;
+    background-image: url("../public/images/quiz_back4_1.jpg");
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 1078px) and (min-width: 800px) {
+  .container-sub-two-container{
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    height: 96%;
+    gap: 8px;
+    justify-content: space-evenly ;
+    background-image: url("../public/images/quiz_back4.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
 @media only screen and (max-width: 800px) and (min-width: 480px){
   .container-sub-two-container{
     display: flex;
