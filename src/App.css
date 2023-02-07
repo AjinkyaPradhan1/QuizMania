@@ -503,8 +503,8 @@ a:hover{
     width: 98%;
     height: 96%;
     gap: 7px;
-    justify-content: space-evenly ;
-    
+    justify-content: space-evenly ;  
+     
   }
   
   .container-sub-two-container-1,.container-sub-two-container-3{
@@ -916,6 +916,7 @@ a:hover{
     height: 96%;
     gap: 8px;
     justify-content: space-evenly ;  
+    background-image: url("../public/images/back_portrait.jpg");
   }
   .container-sub-two-container-1,.container-sub-two-container-3{
     display: flex;
