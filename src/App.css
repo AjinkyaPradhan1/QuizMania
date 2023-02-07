@@ -714,7 +714,7 @@ a:hover{
 @media only screen and (max-width: 800px) and (min-width: 480px){
   .container-sub-two-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 98%;
     height: 96%;
     gap: 8px;
@@ -724,7 +724,7 @@ a:hover{
   }
   .container-sub-two-container-1,.container-sub-two-container-3{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
     flex-grow: 1;
     width: 100%;
@@ -736,7 +736,7 @@ a:hover{
   }
   .container-sub-two-container-2,.container-sub-two-container-4{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     flex-grow: 1;
     width: 100%;
@@ -778,8 +778,8 @@ a:hover{
   
   .flip-card-inner {
     position: relative;
-    width: 50%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -831,12 +831,12 @@ a:hover{
     cursor: pointer;
     display: inline-block;
     font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 800;
     line-height: 16px;
     min-height: 40px;
     outline: 0;
-    padding: 2px 2px;
+    padding: 10px 10px;
     text-align: center;
     text-rendering: geometricprecision;
     text-transform: none;
@@ -844,7 +844,7 @@ a:hover{
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
-    width: 40%;
+    width: 60%;
     
   }
   .trademark{
