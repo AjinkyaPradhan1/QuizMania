@@ -718,30 +718,46 @@ a:hover{
     width: 98%;
     height: 96%;
     gap: 8px;
-    justify-content: space-evenly ;  
+    justify-content: space-evenly ;
+    background-image: url("../public/images/quiz_back4.jpg");
+    background-repeat: no-repeat;  
   }
   .container-sub-two-container-1,.container-sub-two-container-3{
+    display: flex;
+    flex-direction: row;
+    
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 4px;
+    background-color: transparent;
+    
+  }
+  .container-sub-two-container-2,.container-sub-two-container-4{
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-grow: 1;
     width: 100%;
     height: 100%;
-    gap: 4%;
     margin-bottom: 4px;
     background-color: transparent;
   }
-  .container-sub-two-container-2,.container-sub-two-container-4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-grow: 1;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 4px;
-    background-color: transparent;
+  /* .container-sub-two-container-1{
+    background-image: url("../public/images/part1_2.jpg");
   }
-
+  .container-sub-two-container-2{
+    background-image: url("../public/images/part2_2.jpg");
+  }
+  .container-sub-two-container-3{
+    background-image: url("../public/images/part3_3.jpg");
+    background-blend-mode:saturation;
+  }
+  .container-sub-two-container-4{
+    background-image: url("../public/images/part4.jpg");
+    background-blend-mode: lighten;
+  } */
   .flip-card{
     display: flex;
     justify-content: space-evenly;
@@ -755,14 +771,14 @@ a:hover{
     height: 100%;
     perspective: 1000px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     
     text-align: center;
   }
   
   .flip-card-inner {
     position: relative;
-    width: 100%;
+    width: 70%;
     height: 200%;
     display: flex;
     justify-content: center;
@@ -770,6 +786,7 @@ a:hover{
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
   }
   
   .flip-card:hover .flip-card-inner {
