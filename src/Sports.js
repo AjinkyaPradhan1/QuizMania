@@ -132,7 +132,7 @@ function Sports() {
   return (
     <div className="Main">
       <div className="header">
-		<div className="headerText">QUIZZIT : SPORTS</div>
+		<div className="headerText">QUIZMANIA : SPORTS</div>
 		
       </div>
 

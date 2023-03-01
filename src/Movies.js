@@ -129,7 +129,7 @@ function Movies() {
   return (
     <div className="Main">
       <div className="header">
-		<div className="headerText">QUIZZIT : MOVIES</div>
+		<div className="headerText">QUIZMANIA : MOVIES</div>
 	  </div>
 
       <div className="mainCard">

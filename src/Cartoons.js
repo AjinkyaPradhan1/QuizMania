@@ -128,7 +128,7 @@ function Cartoons() {
   return (
     <div className="Main">
       <div className="header">
-	  <div className="headerText">QUIZZIT : CARTOONS</div>
+	  <div className="headerText">QUIZMANIA : CARTOONS</div>
 	  </div>
 
       <div className="mainCard">

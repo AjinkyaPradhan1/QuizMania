@@ -129,7 +129,7 @@ function Animals() {
   return (
     <div className="Main">
       <div className="header">
-	  <div className="headerText">QUIZZIT : ANIMALS</div>
+	  <div className="headerText">QUIZMANIA : ANIMALS</div>
 	  </div>
 
       <div className="mainCard">

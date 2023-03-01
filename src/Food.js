@@ -128,7 +128,7 @@ function Food() {
   return (
     <div className="Main">
       <div className="header">
-	  <div className="headerText">QUIZZIT : TOURISM</div>
+	  <div className="headerText">QUIZMANIA : TOURISM</div>
 	  </div>
 
       <div className="mainCard">

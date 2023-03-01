@@ -129,7 +129,7 @@ function Atlas() {
   return (
     <div className="Main">
       <div className="header">
-	  <div className="headerText">QUIZZIT : ATLAS</div>
+	  <div className="headerText">QUIZMANIA : ATLAS</div>
 	  </div>
 
       <div className="mainCard">

@@ -129,7 +129,7 @@ function Person() {
   return (
     <div className="Main">
       <div className="header">
-	  <div className="headerText">QUIZZIT : PERSONALITIES</div>
+	  <div className="headerText">QUIZMANIA : PERSONALITIES</div>
 	  </div>
 
       <div className="mainCard">
